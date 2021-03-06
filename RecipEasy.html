@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="Login.css">
+		<script type="text/javascript" src="./Login.js"></script>
+		<link rel='icon' href='../hackcu2021/icon.png' type='image/x-icon'/>
+
+		<title>Welcome</title>
+
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <style type="text/css">
+    	body{
+    		background-image: url(kit.jpg);
+    		background-size: 100%;
+    	}
+    </style>
+  </head>
+  <body>
+  	<style type="text/css">
+  		.homebox{
+			background-color: #3B2C35;
+			color: white;
+			text-align: center;
+			border-radius: 25px;
+			width: 300px;
+			height: 325px;
+			margin: 0 auto;
+		}
+		.hbox {
+		  position: relative;
+		  width: 100%;
+		  max-width: 400px;
+		}
+
+		.hbox img {
+		  width: 100%;
+		  height: auto;
+		}
+		.hbox .btn {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  background-color: #cfb97d;
+		  color: #40d1f5;
+		  font-size: 16px;
+		  padding: 16px 30px;
+		  border: none;
+		  cursor: pointer;
+		  border-radius: 5px;
+		  text-align: center;
+		}
+		.hbox .btn:hover {
+		  background-color: white;
+		  color: black;
+		}
+		.button {
+		  background-color: #40d1f5;
+		  border: none;
+		  color: black;
+		  border-radius: 25px;
+		  padding: 25px 60px;
+		  text-align: center;
+		  text-decoration: none;
+		  position: absolute;
+		  top: 40%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  font-size: 16px;
+		  transition-duration: 0.4s;
+		}
+		.button:hover {
+		  background-color: white; 
+		  color: #cfb97d;
+		}
+		.button2 {
+		  background-color: #40d1f5;
+		  border: none;
+		  color: black;
+		  padding: 25px 48px;
+		  border-radius: 25px;
+		  text-align: center;
+		  text-decoration: none;
+		  position: absolute;
+		  top: 60%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  font-size: 16px;
+		  transition-duration: 0.4s;
+		}
+		.button2:hover {
+		  background-color: white; /* Green */
+		  color: #cfb97d;
+		}
+		.static {
+		  position:absolute;
+		  background: #3B2C35;
+		}
+
+		.static:hover {
+		  opacity:0;
+		}
+		.jumbotron{
+			background-color: #40d1f5;
+		}
+		.container{
+			background-color: #40d1f5;
+		}
+  	</style>
+    <div class="jumbotron">
+
+  		<div class="container">
+  			<h1 class="text-center">Welcome to RecipEasy!</h1>
+  		</div>
+  	</div>
+  	<div class="homebox">
+ 		<button class="button" href="#myLoginModal" data-toggle="modal" onclick="openModal()">Login</button>
+ 		<button class="button2" onclick="document.location = 'homepage.html'">Sign Up</button>
+ 		<!-- Login Modal (Nate) -->
+		<div id="myLoginModal" class="modal">
+			<div class="modal-dialog modal-login">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="avatar">
+							<img src="../hackcu2021/icon.png" alt="Avatar">
+						</div>
+						<h4 class="modal-title">Login to RecipEasy</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+					<div class="form-group">
+						<input id="username" type="text" class="form-control" name="Username" placeholder="Username"
+							required="required">
+					</div>
+					<div class="form-group">
+						<input id="password" type="password" class="form-control" name="Password" placeholder="Password"
+							required="required">
+					</div>
+					<div class="form-group">
+						<button id="my_submit_button" class="btn btn-primary btn-block login-btn" onClick="onClickFunction()">Login</button>
+					</div>
+				</div>
+			</div>
+		</div>
+  	</div>
+
+  </body>
+</html>
