@@ -21,17 +21,6 @@ function openModal() {
         /* TODO: Question 1.1: Ends here */
 
 
-        /* TODO: Question 1.2:  Starts here */
-         /*
-         - So first read up on classList.
-         - Perform a console.log(letter.classList) and check the array that you see. By default the first time, there should be just 1 element and it should be
-         "invalid". "invalid" is a class that is present in login.css.
-         - Below, there are a bunch of if blocks and else blocks.
-         - Each if block means that some successful condition is satisfied for our password conditon. So the red cross need to be converted to a check mark.
-         - Each else block stands for a failed condition, so the green check mark needs to be a red cross again.
-         - All that you need to do is, in each of the blocks, fill in the correct classNames for the remove and the add methods.
-         */
-
         // Validate lowercase letters
         if(myInput.value.match(lowerCaseLetters)) {
             letter.classList.remove("invalid");
